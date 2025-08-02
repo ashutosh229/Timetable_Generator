@@ -1,36 +1,108 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 📅 Timetable Generator
 
-## Getting Started
+> Effortless course scheduling — generate, customize, and export your academic timetable.
 
-First, run the development server:
+---
 
+## 📖 Table of Contents
+
+- [About](#about)
+- [Features](#features)
+- [Screenshots](#screenshots)
+- [Tech Stack](#tech-stack)
+- [Installation](#installation)
+- [Contributing](#contributing)
+- [License](#license)
+- [Contact](#contact)
+
+---
+
+## 📘 About
+
+The Timetable Generator is a smart and intuitive web application designed to help students automatically generate optimized course timetables based on their selected courses. With built-in clash detection, downloadable formats (PDF, PNG, ICS), and advanced filtering/search functionality, it offers a complete academic scheduling experience. Backed by a powerful tech stack combining Next.js, Django REST API, and Supabase, it ensures a seamless and responsive user experience.
+
+Whether you're planning your semester or reviewing potential clashes, this tool empowers you to visualize and manage your course load with ease
+
+---
+
+## ✨ Features
+
+- 🔍 Course Search & Selection
+- 📅 Auto-generated Timetable Based on Selected Courses
+- ❌ Clash Detection with Descriptive Warnings
+- 💬 Additional Messages and Tips
+- 📥 Download as PDF, PNG, or ICS Calendar File
+- 🎨 Color-coded Course Cells
+- 📱 Mobile-Responsive UI
+- ⚡ Fast and Real-time Feedback
+- 🔄 Clear Timetable and Start Over Option
+- 🧭 Smooth Navigation and Intuitive Interface
+
+---
+
+## 📸 Screenshots
+
+
+---
+
+## 🧰 Tech Stack
+
+![Next.js](https://img.shields.io/badge/-Next.js-000000?logo=nextdotjs&logoColor=white&style=for-the-badge)
+![TypeScript](https://img.shields.io/badge/-TypeScript-3178C6?logo=typescript&logoColor=white&style=for-the-badge)
+![Tailwind CSS](https://img.shields.io/badge/-Tailwind%20CSS-38B2AC?logo=tailwindcss&logoColor=white&style=for-the-badge)
+![Lucide React](https://img.shields.io/badge/-Lucide%20React-0A0A0A?logo=lucide&logoColor=white&style=for-the-badge)
+![Django REST Framework](https://img.shields.io/badge/Django%20REST%20Framework-black?style=for-the-badge&logo=django&logoColor=white)
+![Supabase](https://img.shields.io/badge/Supabase-3ECF8E?style=for-the-badge&logo=supabase&logoColor=white)
+
+---
+
+## ⚙️ Installation
+
+# Clone the repo
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone https://github.com/ashutosh229/Timetable_Generator.git 
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+# Navigate into the directory
+```bash
+cd Timetable_Generator
+```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+# Install dependencies
+```bash
+npm install
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+# Start the server
+```bash
+npm run dev
+```
 
-## Learn More
+--- 
 
-To learn more about Next.js, take a look at the following resources:
+## 🤝 Contributing
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Contributions, issues, and feature requests are welcome!
+Feel free to check the codebase and submit the pull requests for the changes you want to contribute.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+--- 
 
-## Deploy on Vercel
+## 📄 License
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+This project is licensed under the **MIT License**.
+> Read the full license text here: [MIT License](LICENSE)
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+--- 
+
+## 📬 Contact
+
+If you have any questions, suggestions, or just want to connect, feel free to reach out:
+
+- **Name:** Ashutosh Kumar Jha  
+- **Email:** ashutoshj@iitbhilai.ac.in 
+- **LinkedIn:** [Linkedin](https://www.linkedin.com/in/ashutosh-kumar-jha-601098280)  
+- **GitHub:** [GitHub](https://github.com/ashutosh229)  
+
+---
+
+> 💬 I’m always open to collaboration, feedback, or just a good tech conversation!
