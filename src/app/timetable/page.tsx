@@ -7,7 +7,7 @@ import { days } from "@/src/lib/types";
 import { useSelector } from "react-redux";
 import { RootState } from "@/src/redux/store";
 import { clearTimetable } from "@/src/redux/slices/timetableSlice";
-import { isNotCourse } from "@/src/lib/utils";
+import { isValidCourse } from "@/src/lib/utils";
 import { useEffect, useState } from "react";
 import { useDispatch } from "react-redux";
 
@@ -79,11 +79,11 @@ export default function Timetable() {
                     {timeSlots.map((_, slotIndex) => {
                       const coordinate = `${dayIndex + 1}${slotIndex + 1}`;
                       const course = mapping[coordinate];
-
-                      const cellStyle =
-                        course && !isNotCourse(course)
-                          ? { backgroundColor: "#3b82f6", color: "white" }
-                          : {};
+                      const isValidCourseStat =
+                        typeof course === "string" && isValidCourse(course);
+                      const cellStyle = isValidCourseStat
+                        ? { backgroundColor: "#3b82f6", color: "white" }
+                        : {};
 
                       return (
                         <td
@@ -91,7 +91,7 @@ export default function Timetable() {
                           className="border p-2 text-center"
                           style={cellStyle}
                         >
-                          {course && course !== "  " ? course : ""}
+                          {isValidCourseStat ? course : ""}
                         </td>
                       );
                     })}
